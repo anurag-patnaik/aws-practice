@@ -1,0 +1,22 @@
+{
+  "name": "aws-practice",
+  "version": "1.0.0",
+  "description": "AWS app sandbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuderBattalion/aws-practice.git"
+  },
+  "keywords": [
+    "AWS"
+  ],
+  "author": "Anurag Patnaik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DuderBattalion/aws-practice/issues"
+  },
+  "homepage": "https://github.com/DuderBattalion/aws-practice#readme"
+}
