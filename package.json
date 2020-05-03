@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/DuderBattalion/aws-practice/issues"
   },
-  "homepage": "https://github.com/DuderBattalion/aws-practice#readme"
+  "homepage": "https://github.com/DuderBattalion/aws-practice#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
