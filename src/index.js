@@ -9,7 +9,7 @@ router.get('/api/ping', (req, res) => {
   console.log(ip);
 
   res.json({
-    ip
+    ip,
   });
 });
 
