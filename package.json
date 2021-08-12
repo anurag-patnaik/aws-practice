@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node ./dist/bundle.js",
     "build": "webpack --mode development",
+    "build-docker": "npm run build && docker build -t anuragpatnaik/learning-rest-api .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ."
   },
@@ -24,12 +25,12 @@
   "homepage": "https://github.com/DuderBattalion/aws-practice#readme",
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.25.0",
+    "@babel/plugin-transform-runtime": "^7.15.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",
-    "@babel/plugin-transform-runtime": "^7.15.0",
     "@babel/preset-env": "^7.14.8",
     "babel-loader": "^8.2.2",
     "eslint": "^7.32.0",
