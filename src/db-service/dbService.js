@@ -4,16 +4,18 @@ import { ddbClient } from "../aws-client/client";
 export class DbService {
     getCountryTableParams(id) {
         return {
-            KeyConditionExpression: 'id = :s',
+            KeyConditionExpression: 'id = :id',
             ExpressionAttributeValues: {
-                ':s': id
+                ':id': {
+                    'N': id
+                }
             },
             TableName: 'Country'
         };
     }
 
     async getCountry(id) {
-        const params = this.getCountryTableParams();
+        const params = this.getCountryTableParams(id);
 
         let greeting = '';
         try {

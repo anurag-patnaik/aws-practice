@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "AWS app sandbox",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node ./dist/bundle.js",
     "build": "webpack --mode development",
